@@ -1,0 +1,13 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /api
+    
+spring:
+  application.name: oauth-bug-demo
+  security.oauth2.resourceserver.jwt.jwk-set-uri: http://0.0.0.0:8081/realms/master/protocol/openid-connect/certs
+
+logging:
+  level:
+    org.springframework: WARN
+    org.springframework.security: TRACE
